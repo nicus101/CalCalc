@@ -14,14 +14,14 @@ func main() {
 	)
 
 	fmt.Println("Welcome to CalCalc")
-	fmt.Println("Select your firmware /n M for Marlin, K for Klipper")
+	fmt.Println("Select your firmware \n M for Marlin, K for Klipper")
 
 	_, err := fmt.Scanf("%s", &menu)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	fmt.Printf("odczytano %s /n", menu)
+	fmt.Printf("odczytano %s \n", menu)
 	if menu == "m" {
 		fmt.Println("Enter steps per mm value")
 		_, err = fmt.Scanf("%f", &distance)
@@ -30,7 +30,7 @@ func main() {
 		fmt.Println("Enter actual length")
 		_, err = fmt.Scanf("%f", &actsize)
 
-		fmt.Printf("distance: %f-/n desired length: %f-/n actual length %f-/n", distance, dessize, actsize)
+		fmt.Printf("distance: %f \ndesired length: %f \nactual length %f \n", distance, dessize, actsize)
 
 	}
 }
